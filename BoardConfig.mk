@@ -6,7 +6,7 @@
 -include device/oneplus/sm8150-common/BoardConfigCommon.mk
 
 BOARD_VENDOR := oneplus
-DEVICE_PATH := device/oneplus/guacamole
+DEVICE_PATH := device/oneplus/hotdog
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Assert
