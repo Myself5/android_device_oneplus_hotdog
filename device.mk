@@ -25,4 +25,8 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.display.hotdog.rc
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.qcom
+
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_PRODUCT_IMAGE  := true
