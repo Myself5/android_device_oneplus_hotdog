@@ -25,6 +25,11 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.display.hotdog.rc
 
+# fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl \
+    fastbootd
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.qcom
 
