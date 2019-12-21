@@ -17,6 +17,14 @@ $(call inherit-product, vendor/carbon/config/gsm.mk)
 # Inherit Carbon product configuration
 $(call inherit-product, vendor/carbon/config/common.mk)
 
+TARGET_INCLUDE_WIFI_EXT := true
+
+# Customization
+$(call inherit-product, vendor/google/customization/config.mk)
+
+# Inherit PixelGApps
+$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := carbon_hotdog
 PRODUCT_DEVICE := hotdog
