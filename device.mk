@@ -14,9 +14,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-carbon
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-carbon/frameworks/base/packages/SystemUI
-
 # A/B
 AB_OTA_PARTITIONS += \
     odm \
